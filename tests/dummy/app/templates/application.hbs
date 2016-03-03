@@ -1,27 +1,59 @@
-<h2 id="title">Welcome to Ember</h2>
+<section class="hero is-danger">
 
-<button type="button" name="button" {{ action "call" }}>ChardinJs</button>
-<br><br><br>
+  <div class="hero-header">
+    <header class="header">
+      <div class="container">
+        <div class="header-left">
+        </div>
+        <span class="header-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="header-right header-menu">
+          <span class="header-item">
 
-{{#chardin-hint
-  hint="Awesome."
-  position="top"
-}}
-  <button type="button" name="button">Action 1</button>
-{{/chardin-hint}}
+            {{#chardin-hint
+              hint="Pleaasee !"
+              position="bottom"
+            }}
+            <button class="button is-danger is-inverted">
+              <i class="fa fa-github"></i>
+              Fork me !
+            </button>
+            {{/chardin-hint}}
+          </span>
+        </div>
+      </div>
+    </header>
+  </div>
 
-{{#chardin-hint
-  hint="An awesome 18th-century painter, who found beauty in everyday, common things."
-  position="right"
-}}
-  <button type="button" name="button">Action 2</button>
-{{/chardin-hint}}
+  {{#chardin-hint
+    hint="Truly inspired title"
+    position="bottom"
+  }}
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title">
+        Ember-Chardin
+      </h1>
+      <h2 class="subtitle">
+        Simple overlay instructions for your ember apps with ChardinJs
+      </h2>
+    </div>
+  </div>
+  {{/chardin-hint}}
 
-<br><br><br>
+  <div class="hero-footer">
+    <nav class="tabs is-boxed is-fullwidth">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a href="#">Demo</a></li>
+          <li class=""><a href="#">Getting started</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
 
-{{#chardin-hint
-  hint="An awesome 18th-century painter, who found beauty in everyday, common things."
-  position="bottom"
-}}
-  <button type="button" name="button">Action 3</button>
-{{/chardin-hint}}
+{{outlet}}
