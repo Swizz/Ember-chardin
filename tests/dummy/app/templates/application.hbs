@@ -1,3 +1,27 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+<button type="button" name="button" {{ action "call" }}>ChardinJs</button>
+<br><br><br>
+
+{{#chardin-hint
+  hint="Awesome."
+  position="top"
+}}
+  <button type="button" name="button">Action 1</button>
+{{/chardin-hint}}
+
+{{#chardin-hint
+  hint="An awesome 18th-century painter, who found beauty in everyday, common things."
+  position="right"
+}}
+  <button type="button" name="button">Action 2</button>
+{{/chardin-hint}}
+
+<br><br><br>
+
+{{#chardin-hint
+  hint="An awesome 18th-century painter, who found beauty in everyday, common things."
+  position="bottom"
+}}
+  <button type="button" name="button">Action 3</button>
+{{/chardin-hint}}
