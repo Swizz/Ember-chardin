@@ -14,5 +14,8 @@ module.exports = function(defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
+  app.import('bower_components/chardin.js/chardinjs.css');
+  app.import('bower_components/chardin.js/chardinjs.js');
+
   return app.toTree();
 };
