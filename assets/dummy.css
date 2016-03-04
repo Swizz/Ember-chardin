@@ -1,0 +1,57 @@
+html.auto-scroll {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.hero .header {
+  z-index: auto;
+}
+
+span.chardin-hint .button {
+  margin-right: 10px;
+}
+
+
+.hero.is-danger .tabs.is-boxed li a.active {
+    background: #fff;
+    color: #ed6c63;
+}
+
+.hero.is-danger .tabs li a.active {
+    opacity: 1;
+}
+
+span.tag {
+  display: inline-block;
+  color: rgba(255,255,255,0.7);
+  margin-top: 10px;
+}
+
+span.tag a {
+  color: #fff;
+}
+
+span.tag i.fa {
+  margin-top: 3px;
+}
+
+figure.highlight {
+    background-color: initial;
+}
+
+code .tag {
+  display: inherit;
+  color: initial;
+  margin-top: initial;
+  background: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  color: initial;
+  display: initial;
+  font-size: inherit;
+  height: initial;
+  line-height: initial;
+  padding: initial;
+  vertical-align: initial;
+  white-space: initial;
+}
