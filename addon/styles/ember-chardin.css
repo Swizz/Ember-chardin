@@ -1,3 +1,7 @@
 span.chardin-hint {
   display: inline-block;
 }
+
+li > span.chardin-hint {
+  display: block;
+}
