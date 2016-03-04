@@ -10,12 +10,12 @@
 
             {{#chardin-hint
               hint="Pleaasee !"
-              position="bottom"
+              position="left"
             }}
-            <button class="button is-danger is-inverted">
+            <a href="https://github.com/Swizz/ember-chardin" class="button is-danger is-inverted">
               <i class="fa fa-github"></i>
               Fork me !
-            </button>
+            </a>
             {{/chardin-hint}}
           </span>
         </div>
@@ -41,14 +41,39 @@
 
   <div class="hero-footer">
     <nav class="tabs is-boxed is-fullwidth">
-      <div class="container">
+      <div class="container is-unselectable">
         <ul>
-          <li class="is-active"><a href="#">Demo</a></li>
-          <li class=""><a href="#">Getting started</a></li>
+          <li>{{#link-to "index"}}Demo{{/link-to}}</li>
+          <li>{{#link-to "tutorial"}}Getting started{{/link-to}}</li>
+          <li>
+            {{#chardin-hint
+              hint="Just do it !"
+              position="bottom"
+            }}
+            {{#link-to "further"}}Go further{{/link-to}}
+            {{/chardin-hint}}
+          </li>
         </ul>
       </div>
     </nav>
   </div>
 </section>
 
-{{outlet}}
+<section class="section">
+  <div class="container">
+
+    {{outlet}}
+
+
+    <div class="is-pulled-right">
+      {{#chardin-hint
+        hint="It's me ! :)"
+        position="top"
+      }}
+        <span class="tag is-danger is-large">
+          <i class="fa fa-code"></i> with <i class="fa fa-heartbeat"></i> by <a href="https://github.com/Swizz">Swizz</a>
+        </span>
+      {{/chardin-hint}}
+    </div>
+  </div>
+</section>

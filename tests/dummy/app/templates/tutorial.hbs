@@ -1,0 +1,49 @@
+
+<article class="media is-large">
+  <div class="media-number">1</div>
+  <div class="media-content">
+    <p class="title is-5">
+    Install with <strong>Ember-cli</strong> :
+    </p>
+    <figure class="highlight"><pre><code class="language-bash">ember install ember-chardin</code></pre></figure>
+  </div>
+</article>
+
+<article class="media is-large">
+  <div class="media-number">2</div>
+  <div class="media-content">
+    <p class="title is-5">
+    Use <strong>chardin-hint</strong> in your templates :
+    </p>
+    <figure class="highlight">
+      <pre><code class="language-markup">&#123;&#123;#chardin-hint
+  hint="The famous ChardinJs button"
+  position="right"
+}}
+  &lt;a class="button is-danger is-large" &#123;&#123; action "showHints" }}&gt; Please, try it out ! &lt;/a&gt;
+&#123;&#123;/chardin-hint}}</code></pre></figure>
+  </div>
+</article>
+
+<article class="media is-large">
+  <div class="media-number">3</div>
+  <div class="media-content">
+    <p class="title is-5">
+    Call the <strong>Chardin</strong> service in your controller :
+    </p>
+    <figure class="highlight">
+      <pre><code class="language-js">import Ember from 'ember';
+
+export default Ember.Controller.extend({
+  chardin : Ember.inject.service(),
+
+  actions : {
+    showHints: function () {
+      this.get('chardin').show();
+    }
+  }
+});</code></pre></figure>
+  </div>
+</article>
+
+<br><br><br>

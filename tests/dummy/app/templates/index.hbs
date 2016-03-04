@@ -1,21 +1,26 @@
-<section class="section">
-   <div class="container">
-     <div class="content">
-       <h1>Demo</h1>
+<div class="content">
+  <br><br><br>
+  <br><br>
 
-       {{#chardin-hint
-         hint="The famous ChardinJs button launcher."
-         position="right"
-       }}
-         <a class="button is-danger is-large" {{ action "run" }}> Show hints</a>
-       {{/chardin-hint}}
+  <div class="is-text-centered is-full-width">
+    {{#chardin-hint
+      hint="Because everyone love animated graphics"
+      position="left"
+    }}
+   <img src="/red-button.gif" alt="" />
+   {{/chardin-hint}}
+   <br><br>
 
-       <h1>Todos</h1>
-       <ul>
-         <li>Helper</li>
-         <li>Mixin</li>
-         <li>Inline</li>
-       </ul>
-     </div>
-   </div>
- </section>
+    {{#chardin-hint
+      hint="The famous ChardinJs button"
+      position="right"
+    }}
+      <a class="button is-danger is-large" {{ action "showHints" }}>Please, try it out !</a>
+    {{/chardin-hint}}
+  </div>
+
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+</div>

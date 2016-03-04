@@ -4,8 +4,8 @@ export default Ember.Controller.extend({
   chardin : Ember.inject.service(),
 
   actions : {
-    run: function () {
-      this.get('chardin').start();
+    showHints: function () {
+      this.get('chardin').show();
     }
   }
 });
