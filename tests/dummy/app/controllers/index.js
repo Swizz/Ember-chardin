@@ -1,10 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  chardin : Ember.inject.service(),
 
   actions : {
-    run: () => {
-      $("body").chardinJs('start');
+    run: function () {
+      this.get('chardin').start();
     }
   }
 });

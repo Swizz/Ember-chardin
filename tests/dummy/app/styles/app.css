@@ -2,3 +2,7 @@ html.auto-scroll {
   overflow-x: auto;
   overflow-y: auto;
 }
+
+.hero .header {
+  z-index: auto;
+}
