@@ -2,11 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
 
-  start : function() {
+  show : function() {
     Ember.$('body').chardinJs('start');
   },
 
-  stop : function() {
+  hide : function() {
     Ember.$('body').chardinJs('stop');
   },
 
