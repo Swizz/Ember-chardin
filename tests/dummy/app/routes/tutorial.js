@@ -8,7 +8,7 @@ export default Ember.Route.extend({
         console.log('called');
       });
 
-      return true; // Bubble the didTransition event
+      return true;
     }
   }
 });
