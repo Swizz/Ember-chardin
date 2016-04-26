@@ -10,7 +10,7 @@ module.exports = {
  	afterInstall: function() {
     return this.addBowerPackagesToProject(
       [
-        { name: 'chardin.js', target: 'heelhook/chardin.js#^0.1.3' }
+        { name: 'chardin.js', target: '^0.1.3' }
       ]
     );
   }
