@@ -1,6 +1,6 @@
 {
   "name": "ember-chardin",
-  "version": "0.0.9-3",
+  "version": "0.0.9-4",
   "description": "Simple overlay instructions for your ember apps with ChardinJs.",
   "directories": {
     "doc": "doc",
